@@ -1,0 +1,9 @@
+# Archivos y carpetas de IntelliJ
+.idea/
+*.iml
+
+# Archivos del sistema
+.DS_Store
+
+# Compilados de Maven
+/target/
