@@ -7,3 +7,6 @@
 
 # Compilados de Maven
 /target/
+
+../.DS_Store
+../.idea/
