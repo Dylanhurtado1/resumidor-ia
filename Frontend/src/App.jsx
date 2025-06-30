@@ -5,12 +5,13 @@ function App() {
   const [input, setInput] = useState('');
   const [claro, setClaro] = useState('');
   const [loading, setLoading] = useState(false);
+  const API_URL = import.meta.env.VITE_BACKEND_URL + "/api/entender";
 
   const handleEntender = async () => {
     setLoading(true);
     setClaro('');
     try {
-      const resp = await fetch('http://localhost:8080/api/entender', {
+      const resp = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ texto: input })
